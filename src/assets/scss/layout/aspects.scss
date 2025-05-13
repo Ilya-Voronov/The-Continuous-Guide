@@ -1,0 +1,62 @@
+.aspect {
+  @media (pointer: fine) {
+    a {
+      &:hover {
+        &::before {
+          content: "";
+
+          position: fixed;
+          top: 0;
+          left: 0;
+
+          width: 100%;
+          height: 100%;
+
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          z-index: -1;
+        }
+      }
+    }
+  }
+
+  &--past {
+    @media (pointer: fine) {
+      a {
+        &:hover {
+          &::before {
+            background-image: url(../images/past.jpg);
+            background-position: 0 50%;
+          }
+        }
+      }
+    }
+  }
+
+  &--present {
+    @media (pointer: fine) {
+      a {
+        &:hover {
+          &::before {
+            background-image: url(../images/present.jpg);
+            background-position: 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  &--future {
+    @media (pointer: fine) {
+      a {
+        &:hover {
+          &::before {
+            background-image: url(../images/future.jpg);
+            background-position: 0 50%;
+          }
+        }
+      }
+    }
+  }
+}

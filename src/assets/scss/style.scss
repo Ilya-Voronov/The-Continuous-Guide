@@ -1,5 +1,7 @@
-@import "vendors/normalize.scss";
+@use "vendors/normalize";
 
-@import "base/global.scss";
+@use "base/global";
 
-@import "components/list.scss";
+@use "components/list";
+
+@use "layout/aspects";

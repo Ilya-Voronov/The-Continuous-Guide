@@ -143,7 +143,7 @@ function images(cb) {
     .pipe(
       imagemin([
         imagemin.gifsicle({ interlaced: true }),
-        imagemin.mozjpeg({ quality: 95, progressive: true }),
+        imagemin.mozjpeg({ quality: 40, progressive: true }),
         imagemin.optipng({ optimizationLevel: 5 }),
         imagemin.svgo({
           plugins: [{ removeViewBox: true }, { cleanupIDs: false }],

@@ -9,7 +9,6 @@ html {
 body {
   margin: 0 auto;
   padding: 0 10px;
-  max-width: 1200px;
 
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -17,11 +16,27 @@ body {
   font-weight: 400;
   color: #000;
 
-  background-color: #fff;
+  background-color: rgba(255, 254, 207, 0.281);
 }
 
 h1 {
   text-align: center;
+
+  @media (pointer: fine) {
+    text-shadow: 0 0 10px rgb(255, 254, 207);
+  }
+
+  @media (min-width: 500px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 1260px) {
+    font-size: 60px;
+  }
+
+  @media (min-width: 1600px) {
+    font-size: 80px;
+  }
 }
 
 a {
