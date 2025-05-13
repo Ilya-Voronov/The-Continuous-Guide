@@ -1,7 +1,8 @@
 .aspect {
-  @media (pointer: fine) {
+  @media (hover) {
     a {
       &:hover {
+        color: #fff;
         &::before {
           content: "";
 
@@ -16,15 +17,18 @@
           background-size: cover;
 
           z-index: -1;
+          animation: opacity 400ms;
         }
       }
     }
   }
 
   &--past {
-    @media (pointer: fine) {
+    @media (hover) {
       a {
         &:hover {
+          background-color: rgb(148, 84, 0);
+
           &::before {
             background-image: url(../images/past.jpg);
             background-position: 0 50%;
@@ -35,9 +39,10 @@
   }
 
   &--present {
-    @media (pointer: fine) {
+    @media (hover) {
       a {
         &:hover {
+          background-color: rgb(148, 0, 7);
           &::before {
             background-image: url(../images/present.jpg);
             background-position: 0 0;
@@ -48,9 +53,10 @@
   }
 
   &--future {
-    @media (pointer: fine) {
+    @media (hover) {
       a {
         &:hover {
+          background-color: rgb(106, 0, 148);
           &::before {
             background-image: url(../images/future.jpg);
             background-position: 0 50%;
