@@ -139,6 +139,11 @@ img {
     }
   }
 
+  .table-two-grid {
+    grid-column-start: 1;
+    grid-column-end: 2 span;
+  }
+
   .table-grow {
     grid-column-start: 3;
     grid-row-start: 2;
