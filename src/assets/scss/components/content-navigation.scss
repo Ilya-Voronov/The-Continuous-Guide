@@ -1,0 +1,29 @@
+.content-navigation {
+  position: relative;
+}
+
+.content-navigation__previous {
+  position: absolute;
+}
+
+.content-navigation__title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.content-navigation__list {
+  padding-left: 20px;
+}
+
+.content-navigation {
+  a {
+    transition: opacity 300ms;
+
+    @media (hover) {
+      &:hover,
+      &:focus {
+        opacity: 0.5;
+      }
+    }
+  }
+}

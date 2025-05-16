@@ -1,0 +1,55 @@
+.content {
+  padding: 0 20px;
+
+  background-color: #fff;
+
+  @media (min-width: 992px) {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    &--past {
+      background-image: url(../images/past.jpg);
+      background-position: 0 50%;
+    }
+
+    &--present {
+      background-image: url(../images/present.jpg);
+      background-position: 0 0;
+    }
+
+    &--future {
+      background-image: url(../images/future.jpg);
+      background-position: 0 50%;
+    }
+  }
+}
+
+.content__main {
+  max-width: 992px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+
+  background-color: #fffffff8;
+
+  @media (min-width: 992px) {
+    padding: 20px 40px;
+  }
+}
+
+.content__title {
+  margin-bottom: 30px;
+
+  @media (min-width: 500px) {
+    margin-bottom: 50px;
+  }
+}
+
+.content__list {
+  padding-left: 20px;
+
+  li {
+    padding: 2px 0;
+  }
+}

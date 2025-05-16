@@ -4,27 +4,20 @@
     @@include('partials/head.html')
   </head>
   <body>
-    @@include('partials/header.html')
+    <main>
+      <h1 class="text-shadow index-title">The Continuous Guide</h1>
 
-    <main class="page-main">
-        <h1>The Continuous Aspect</h1>
-
-        <ul class="list aspects">
-          <li class="list__item aspect aspect--past">
-            <a href="past.html" class="list__link">Past Continuous</a>
-          </li>
-          <li class="list__item aspect aspect--present">
-            <a href="present.html" class="list__link">Present Continuous</a>
-          </li>
-          <li class="list__item aspect aspect--future">
-            <a href="future.html" class="list__link">Future Continuous</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="aspects">
+        <li class="aspect aspect--past">
+          <a href="past.html">Past Continuous</a>
+        </li>
+        <li class="aspect aspect--present">
+          <a href="present.html">Present Continuous</a>
+        </li>
+        <li class="aspect aspect--future">
+          <a href="future.html">Future Continuous</a>
+        </li>
+      </ul>
     </main>
-
-    @@include('partials/footer.html')
-
-    <script src="assets/js/file1.js"></script>
   </body>
 </html>
