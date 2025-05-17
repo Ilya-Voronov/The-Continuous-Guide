@@ -1,6 +1,7 @@
 .button {
   display: block;
 
+  width: 100%;
   padding: 30px;
 
   text-align: center;
@@ -17,10 +18,19 @@
   cursor: pointer;
 
   @media (hover) {
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: #fff;
       color: #000;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
     }
   }
 }

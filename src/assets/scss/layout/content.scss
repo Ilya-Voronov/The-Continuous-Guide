@@ -53,3 +53,35 @@
     padding: 2px 0;
   }
 }
+
+.content__form {
+  .correct-text {
+    border-color: green;
+  }
+
+  .incorrect-text {
+    border-color: red;
+  }
+
+  input[type="text"] {
+    padding: 5px;
+    width: 50%;
+  }
+
+  .button {
+    margin-top: 40px;
+  }
+}
+
+.content__form-radio {
+  display: flex;
+  flex-direction: column;
+
+  label:has(.correct-radio) {
+    color: green;
+  }
+
+  label:has(.incorrect-radio) {
+    color: red;
+  }
+}

@@ -4,6 +4,10 @@
 
 .content-navigation__previous {
   position: absolute;
+
+  &--test {
+    position: relative;
+  }
 }
 
 .content-navigation__title {
