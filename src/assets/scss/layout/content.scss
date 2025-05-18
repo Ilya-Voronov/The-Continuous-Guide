@@ -65,7 +65,11 @@
 
   input[type="text"] {
     padding: 5px;
-    width: 50%;
+    width: 90%;
+
+    @media (min-width: 992px) {
+      width: 50%;
+    }
   }
 
   .button {
